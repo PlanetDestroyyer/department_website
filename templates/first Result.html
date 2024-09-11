@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Students</title>
+    <link rel="stylesheet" href="firststyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Second Year (2023-24) Results </h1>
+        <div class="students">
+            <div class="student" onclick="toggleInfo(this)">
+                <img src="student1.jpg" alt="Student 1">
+                <div class="details">
+                    <p>Divesh Bari<br>Rank : 1</p>
+                </div>
+                <div class="info">
+                    <p>GPA: 9.25</p>
+                    <a href="https://www.linkedin.com/in/divesh-bari-824552318/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="student" onclick="toggleInfo(this)">
+                <img src="student2.jpg" alt="Student 2">
+                <div class="details">
+                    <p>Prathamesh B<br>Rank: 2</p>
+                </div>
+                <div class="info">
+                    <p>GPA: 9.02</p>
+                    <a href="https://www.linkedin.com/in/prathamesh-bhagwat-52b651258/">LinkedIn</a>
+                </div>
+            </div>
+			<div class="student" onclick="toggleInfo(this)">
+                <img src="student2.jpg" alt="Student 2">
+                <div class="details">
+                    <p>Tejas Nikam<br>Rank: 3</p>
+                </div>
+                <div class="info">
+                    <p>GPA: 8.93</p>
+                    <a href="https://www.linkedin.com/in/tejasnikam2109/">LinkedIn</a>
+                </div>
+            </div>
+			<div class="student" onclick="toggleInfo(this)">
+                <img src="student2.jpg" alt="Student 2">
+                <div class="details">
+                    <p>Ansh Mahajan<br>Rank: 4</p>
+                </div>
+                <div class="info">
+                    <p>GPA: 8.84</p>
+                    <a href="https://www.linkedin.com/in/ansh-mahajan-62232129b/">LinkedIn</a>
+                </div>
+            </div>
+			<div class="student" onclick="toggleInfo(this)">
+                <img src="student2.jpg" alt="Student 2">
+                <div class="details">
+                    <p>Swathi Pepeti<br>Rank: 4</p>
+                </div>
+                <div class="info">
+                    <p>GPA: 8.84</p>
+                    <a href="https://www.linkedin.com/in/swathi-pepeti-286478286/">LinkedIn</a>
+                </div>
+            </div>
+    </div>
+    <script>
+		function toggleInfo(studentElement) {
+			studentElement.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

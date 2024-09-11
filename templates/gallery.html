@@ -1,0 +1,60 @@
+{% extends 'index.html' %}
+
+{% block styles %}
+<style>
+
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+
+</style>
+{% endblock styles %}
+{% block body %}
+
+<div class="container mt-5">
+    <div class="mt-5">
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center my-2">
+                <h4>EVENET GALLERY</h4>
+            </div>
+         </div>
+    </div>
+
+    </div>
+    <div class="portfolio-item row">
+       <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+          <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+          <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
+          </a>
+       </div>
+    </div>
+ </div>
+ 
+ 
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock body %}

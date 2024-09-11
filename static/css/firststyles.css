@@ -1,0 +1,57 @@
+
+
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.student:hover {
+    background-color: #d9d9d9;
+	transform: scale(1.01);
+}
+
+.student img {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+	padding-left: 30px;
+}
+
+.info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: #81DAE3;
+    color: white;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    transition: width 0.3s;
+}
+
+.info p {
+    margin: 0;
+}
+
+.student.active .info {
+    width: 300px;
+}

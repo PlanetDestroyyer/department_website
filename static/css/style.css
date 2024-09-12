@@ -30,7 +30,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); /* Center the text */
     color: white; /* Text color */
-    font-size: 6em; /* Adjust the size as needed */
+    font-size: 6rem; /* Adjust the size as needed */
     font-weight: bold; /* Makes the text bold */
     z-index: 5;
     text-shadow: 2px 2px 4px #000000; /* Optional: adds a shadow for better visibility */
@@ -613,7 +613,10 @@ a:hover {
 }
 
 @media(max-width: 786px) {
+    .overlay-text {
+    font-size: 4rem; /* Adjust the size as needed */
 
+}
     .logo {
         position: fixed;
         top: 0;

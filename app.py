@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 import pandas as pd
 import os
 
+
 app = Flask(__name__, static_url_path='/static')
 
 
@@ -31,6 +32,11 @@ def contactus():
 def gallery():
     return render_template("gallery.html")
 
+@app.route("/pbl")
+def pbl():
+    df = pd.read_csv('static/data/Projects.csv')
+    df = df.to_dict('records')  
+    return render_template("pbl.html",df=df)
 
 if __name__ == "__main__":
       app.run(debug=True,host="0.0.0.0", port=5000)

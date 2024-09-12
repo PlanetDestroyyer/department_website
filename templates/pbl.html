@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+{% block head %}
+<title>Contact Us</title>
+{% endblock head %}
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .c-details span {
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #eee;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #6c757d;
+    }
+    
+    .badge span {
+        background-color: #fffbec;
+        width: 60px;
+        height: 25px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        display: flex;
+        color: #fed85d;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .progress {
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    .progress div {
+        background-color: #dc3545;
+    }
+    
+    .text1 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .text2 {
+        color: #a5aec0;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+</style>
+
+{% block body %}
+<!-- Contact 1 - Bootstrap Grid and Cards -->
+<section class="container py-3 py-md-5 mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        {% for item in df %}
+        <div class="col d-flex align-items-stretch">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item['NAAC PROJECT '] }}</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock body %}
